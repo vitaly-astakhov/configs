@@ -1,0 +1,19 @@
+[core]
+	hideDotFiles = false
+	pager = delta
+[user]
+	name = Vitalii Astakhov
+	email = vitalastakhov@gmail.com
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[init]
+	defaultBranch = main
+[branch]
+	sort = -committerdate
+[commit]
+	gpgsign = true
+[alias]
+	lg = log --pretty='%C(red)%hCreset%C(yellow)%d%Creset%s %C(cyan)(%ar)%Creset'
