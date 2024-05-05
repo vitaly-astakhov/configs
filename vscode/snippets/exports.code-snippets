@@ -1,0 +1,40 @@
+{
+  "Export As": {
+    "prefix": "expdas",
+    "body": [
+      "export { ${2} as ${3} } from '${1}'",
+    ],
+  },
+  "Export Destructured": {
+    "prefix": "expd",
+    "body": [
+      "export { ${2} } from '${1}'",
+    ],
+  },
+  "Public Api Full": {
+    "prefix": "papif",
+    "body": [
+      "import { ${2} } from '${1}';",
+      "",
+      "export {",
+      "  ${3} ",
+      "}",
+    ],
+  },
+  "Public Api Full With Const": {
+    "prefix": "papifc",
+    "body": [
+      "import { ${2} } from '${1}';",
+      "",
+      "export const ${3:index} = {",
+      "  ${4} ",
+      "}",
+    ],
+  },
+  "Public Api Small": {
+    "prefix": "papis",
+    "body": [
+      "export { ${2} } from '${1}';",
+    ],
+  }
+}

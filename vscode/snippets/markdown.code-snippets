@@ -1,0 +1,47 @@
+{
+  "🟦 Highlights information that users should take into account, even when skimming." : {
+    "scope": "markdown,mdx",
+    "prefix": "md:note",
+    "body": [
+      "> [!NOTE]",
+      "> $1"
+    ],
+    "description": "Highlights information that users should take into account, even when skimming."
+  },
+  "🟩 Optional information to help a user be more successful." : {
+    "scope": "markdown,mdx",
+    "prefix": "md:tip",
+    "body": [
+      "> [!TIP]",
+      "> $1"
+    ],
+    "description": "Optional information to help a user be more successful."
+  },
+  "🟪 Crucial information necessary for users to succeed." : {
+    "scope": "markdown,mdx",
+    "prefix": "md:important",
+    "body": [
+      "> [!IMPORTANT]",
+      "> $1"
+    ],
+    "description": "Crucial information necessary for users to succeed."
+  },
+  "🟧 Critical content demanding immediate user attention due to potential risks." : {
+    "scope": "markdown,mdx",
+    "prefix": "md:warning",
+    "body": [
+      "> [!WARNING]",
+      "> $1"
+    ],
+    "description": "Critical content demanding immediate user attention due to potential risks."
+  },
+  "🟥 Negative potential consequences of an action." : {
+    "scope": "markdown,mdx",
+    "prefix": "md:caution",
+    "body": [
+      "> [!CAUTION]",
+      "> $1"
+    ],
+    "description": "Negative potential consequences of an action."
+  }
+}

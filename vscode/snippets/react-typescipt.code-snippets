@@ -1,0 +1,37 @@
+{
+  "React Component With Interface (Typescript)": {
+    "scope": "typescriptreact",
+    "prefix": "rtc",
+    "body": [
+      "interface ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}Props { }",
+      "",
+      "export const ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}} = (props: ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}Props) => {",
+      "  return (",
+      "    <${02:div}>",
+      "      ${0}",
+      "    </${02:div}>",
+      "  )",
+      "}"
+    ],
+    "description": "Creates a React Arrow Function Component with TypeScript interface"
+  },
+  // "typescriptReactComponentForWithInterfaceAndClassnames": {
+  //   "scope": "typescriptreact",
+  //   "prefix": "rtsic",
+  //   "body": [
+  //     "import { FC } from 'react';",
+  //     "import classes from '${1}';",
+  //     "",
+  //     "interface ${2:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}}Props { }",
+  //     "",
+  //     "export const ${2:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}}: FC<${2:${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}}Props> = () => {",
+  //     "  return (",
+  //     "    <${3:div}>",
+  //     "      ${0}",
+  //     "    </${3:div}>",
+  //     "  )",
+  //     "}"
+  //   ],
+  //   "description": "Creates a React Arrow Function Component with TypeScript interface and CSS-module"
+  // }
+}

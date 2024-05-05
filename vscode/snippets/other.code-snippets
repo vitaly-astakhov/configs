@@ -1,0 +1,9 @@
+{
+  "html": {
+    "scope": "typescript, javascipt",
+    "prefix": "divx",
+    "body": [
+      "<div className={$1}>$2</div>",
+    ],
+  },
+}
