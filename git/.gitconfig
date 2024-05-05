@@ -1,19 +1,40 @@
 [core]
+	editor = code --wait
+	ignorecase = false
 	hideDotFiles = false
-	pager = delta
 [user]
 	name = Vitalii Astakhov
 	email = vitalastakhov@gmail.com
-[filter "lfs"]
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
 [init]
 	defaultBranch = main
 [branch]
 	sort = -committerdate
+[pull]
+	rebase = true
 [commit]
-	gpgsign = true
+	gpgSign = true
+[blame]
+	coloring = highlightRecent
+[color]
+	ui = auto
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
 [alias]
-	lg = log --pretty='%C(red)%hCreset%C(yellow)%d%Creset%s %C(cyan)(%ar)%Creset'
+	# Parent of the branch
+	# Source: https://stackoverflow.com/a/52025740/14615230
+	parent = "!git show-branch | grep '*' | grep -v \"$(git rev-parse --abbrev-ref HEAD)\" | head -n1 | sed 's/.*\\[\\(.*\\)\\].*/\\1/' | sed 's/[\\^~].*//' #"
+
+	# Logging
+	# Source: https://stackoverflow.com/a/34467298/14615230
+
+	lg = lg1
+	lg1 = lg1-specific --all
+	lg2 = lg2-specific --all
+	lg3 = lg3-specific --all
+
+	lg1-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
+	lg2-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''	%C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
+	lg3-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset) %C(bold cyan)(committed: %cD)%C(reset) %C(auto)%d%C(reset)%n''	%C(white)%s%C(reset)%n''	%C(dim white)- %an <%ae> %C(reset) %C(dim white)(committer: %cn <%ce>)%C(reset)'
