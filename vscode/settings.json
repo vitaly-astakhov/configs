@@ -1,0 +1,206 @@
+{
+  // "[scminput]": {
+  //   "editor.rulers": [
+  //     50,
+  //     72
+  //   ],
+  //   "editor.wordWrap": "off"
+  // },
+  "[css]": {
+    "editor.suggest.insertMode": "replace"
+  },
+  "[javascript, typescriptreact]": {
+    "editor.defaultFormatter": "dprint.dprint",
+    "editor.formatOnSave": true
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "editor.quickSuggestions": {
+      "other": "on"
+    }
+  },
+  "conventionalCommits.autoCommit": false,
+  "conventionalCommits.gitmoji": false,
+  "cSpell.language": "en,ru",
+  "cSpell.userWords": [
+    "clsx"
+  ],
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.accessibilitySupport": "off",
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": "explicit",
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit",
+    "source.sortMembers": "explicit"
+  },
+  "editor.copyWithSyntaxHighlighting": false,
+  "editor.defaultFormatter": "dprint.dprint",
+  "editor.detectIndentation": false,
+  "editor.emptySelectionClipboard": false,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.linkedEditing": true,
+  "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.quickSuggestions": {
+    "comments": false,
+    "strings": "on"
+  },
+  "editor.renderWhitespace": "all",
+  "editor.smoothScrolling": true,
+  "editor.snippetSuggestions": "top",
+  "editor.suggestSelection": "first",
+  "editor.tabCompletion": "onlySnippets",
+  "editor.tabSize": 2,
+  "editor.unicodeHighlight.allowedCharacters": {
+    "о": true
+  },
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "emmet.excludeLanguages": [
+    "markdown"
+  ],
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "markdown": "html"
+  },
+  "emmet.preferences": {
+    "settings": {
+      "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "typescript": "typescriptreact"
+      }
+    }
+  },
+  "emmet.showSuggestionsAsSnippets": true,
+  "explorer.compactFolders": true,
+  "explorer.confirmDelete": true,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.fileNesting.enabled": true,
+  "files.associations": {
+    "*.css": "css",
+    "*.js": "javascript",
+    "*.jsx": "javascriptreact",
+    "*.ts": "typescript",
+    "*.tsx": "typescriptreact"
+  },
+  "files.autoSave": "afterDelay",
+  "files.exclude": {
+    "**/.DS_Store": false,
+    "**/.git": false,
+    "**/.hg": false,
+    "**/.svn": false
+  },
+  "files.insertFinalNewline": false,
+  // "files.readonlyInclude": {
+  //   "node_modules/**": true
+  // },
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "git.enableSmartCommit": true,
+  "git.ignoreRebaseWarning": true,
+  "git.mergeEditor": true,
+  "git.postCommitCommand": "none",
+  "githubPullRequests.pushBranch": "always",
+  // "[python]": {
+  //   "editor.formatOnType": true
+  // },
+  // "[rust]": {
+  //   "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  // },
+  "gitlens.advanced.messages": {
+    "suppressRebaseSwitchToTextWarning": true
+  },
+  "javascript.preferences.quoteStyle": "single",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "markdown.extension.toc.updateOnSave": false,
+  "markdown.experimental.updateLinksOnPaste": true,
+  "multiDiffEditor.experimental.enabled": true,
+  "tailwindCSS.experimental.classRegex": [
+    [
+      "Classes \\=([^;]*);",
+      "'([^']*)'"
+    ],
+    [
+      "Classes \\=([^;]*);",
+      "\"([^\"]*)\""
+    ],
+    [
+      "Classes \\=([^;]*);",
+      "\\`([^\\`]*)\\`"
+    ],
+    [
+      "clsx\\(([^)]*)\\)",
+      "(?:'|\"|`)([^']*)(?:'|\"|`)"
+    ]
+  ],
+  "tailwindCSS.includeLanguages": {
+    "css": "css",
+    "html": "html",
+    "javascript": "javascript"
+  },
+  "terminal.explorerKind": "both",
+  "terminal.external.windowsExec": "wt",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.splitCwd": "workspaceRoot",
+  "terminals.invertCommandsAndDescription": false,
+  "terminals.showCommands": true,
+  "terminals.showDescriptions": true,
+  "terminals.sortTerminals": true,
+  "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
+  "terminal.integrated.shellIntegration.enabled": true,
+  "terminal.integrated.shellIntegration.suggestEnabled": true,
+  "terminals.terminals": [
+    {
+      "description": "Default terminal",
+      "name": "First Terminal"
+    },
+    {
+      "description": "Default terminal",
+      "name": "Second Terminal",
+      "split": "First Terminal"
+    },
+    {
+      "description": "Gitbash terminal",
+      "icon": "git-branch",
+      "name": "Git Bash",
+      "profile": "git-bash",
+      "shellPath": "C:\\Program Files\\Git\\bin\\bash.exe",
+      "split": "Second Terminal"
+    }
+  ],
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "update.showReleaseNotes": true,
+  "window.autoDetectColorScheme": true,
+  "window.newWindowDimensions": "maximized",
+  "window.restoreFullscreen": true,
+  "workbench.activityBar.location": "top",
+  "workbench.colorCustomizations": {},
+  "workbench.colorTheme": "Default Light Modern",
+  "workbench.editor.closeEmptyGroups": false,
+  "workbench.editor.customLabels.patterns": {
+    "**/src/**/ui/**/index.{ts,tsx}": "${dirname} - UI",
+    "**/src/{entities,features,widgets,pages}/*/index.ts": "${dirname} - Public API",
+    "**/src/{entities,features,widgets}/**/ui/**/index.{tsx}": "${dirname} - ${dirname(2)} UI",
+    "**/assets/**.***": "${filename} - Assets",
+    "**/readme.md": "${dirname}"
+  },
+  "workbench.editor.wrapTabs": true,
+  "workbench.editorAssociations": {
+    "*.db": "default",
+    "*.svg": "default",
+    "git-rebase-todo": "default"
+  },
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.list.smoothScrolling": true,
+  // "workbench.preferredDarkColorTheme": "GitHub Dark",
+  // "workbench.preferredLightColorTheme": "GitHub Light",
+  "workbench.preferredDarkColorTheme": "Default Dark Modern",
+  "workbench.preferredLightColorTheme": "Default Light Modern",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.tree.enableStickyScroll": true
+}
